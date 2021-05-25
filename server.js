@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
     res.sendFile(filePath);
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`server start on port ${port}`);
 });
